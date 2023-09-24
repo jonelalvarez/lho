@@ -1,0 +1,480 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link runat="server" rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link runat="server" rel="icon" href="favicon.ico" type="image/ico" />
+    </asp:ContentPlaceHolder>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LHO</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="Template/thirparty/googlefont.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Template/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link href="Template/thirparty/ionicons.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="Template/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="Template/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="Template/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="Template/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="Template/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="Template/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="Template/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="Template/plugins/jqvmap/jqvmap.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="Template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="Template/plugins/daterangepicker/daterangepicker.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="Template/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="Template/plugins/summernote/summernote-bs4.min.css">
+    <%--<link href="Template/thirparty/ext-table/script/summernote/plugin/table/summernote-ext-table.css" rel="stylesheet" />
+    <link href="Template/thirparty/summernotepapersize/css/css.css" rel="stylesheet" />--%>
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="Template/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="Template/plugins/toastr/toastr.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="Template/plugins/dropzone/min/dropzone.min.css">
+    <%-- MyCSS --%>
+    <link href="Template/thirparty/myCSS.css" rel="stylesheet" />
+    <%-- Upload Picture --%>
+    <link href="Template/thirparty/colorbox.min.css" rel="stylesheet" />
+    <link href="Template/thirparty/ace.min.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Template/dist/css/adminlte.min.css">
+
+    <%-- summernotepages --%>
+    <%--<link href="Template/thirparty/summernote-pages.css" rel="stylesheet" />--%>
+
+    <%-- CKEditor --%>
+    <%--<link href="Template/thirparty/ckeditor.css" rel="stylesheet" />--%>
+
+    <!-- jQuery -->
+    <script src="Template/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="Template/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+        </script>
+    <!-- Bootstrap 4 -->
+    <script src="Template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="Template/plugins/select2/js/select2.full.min.js"></script>
+    <!-- InputMask -->
+    <script src="Template/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- ChartJS -->
+    <script src="Template/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="Template/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="Template/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="Template/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="Template/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="Template/plugins/moment/moment.min.js"></script>
+    <script src="Template/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="Template/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="Template/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="Template/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="Template/thirparty/summernote-pagebreak.js"></script>
+    <script src="Template/thirparty/summernote-ext-print.js"></script>
+    <script src="Template/thirparty/summernote-table-styles.js"></script>
+    <%--<script src="Template/thirparty/ext-table/script/summernote/plugin/table/summernote-ext-table.js"></script>
+    <script src="Template/thirparty/summernotepapersize/summernote-paper-size.js"></script>
+    <script src="Template/thirparty/summernotepapersize/lang/en-US.js"></script>--%>
+
+    <!-- overlayScrollbars -->
+    <script src="Template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="Template/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="Template/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="Template/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="Template/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="Template/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="Template/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="Template/plugins/jszip/jszip.min.js"></script>
+    <script src="Template/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="Template/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="Template/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="Template/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="Template/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- jquery-validation -->
+    <script src="Template/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="Template/plugins/jquery-validation/additional-methods.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="Template/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="Template/plugins/toastr/toastr.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="Template/plugins/dropzone/min/dropzone.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="Template/dist/js/adminlte.js"></script>
+    <%-- customize JS --%>
+    <script src="Template/thirparty/myJS.js"></script>
+
+    <%-- upload --%>
+    <script src="Template/thirparty/jquery.colorbox.min.js"></script>
+    <script src="Template/thirparty/ace-elements.min.js"></script>
+    <script src="Template/thirparty/ace.min.js"></script>
+
+    <!-- ECharts -->
+    <script src="Template/thirparty/echarts/dist/echarts.min.js"></script>
+
+    <%-- TOC --%>
+    <%--<script src="Template/thirparty/toc/jquery.toc.min.js"></script>--%>
+
+    <%-- CKEditor --%>
+    <%--<script src="Template/thirparty/ckeditor.js"></script>--%>
+    <%--<script src="Template/thirparty/ckfinder.js"></script>--%>
+    <%--<script src="Template/thirparty/tinymce/tinymce.min.js"></script>--%>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed text-sm layout-navbar-fixed">
+    <form id="form1" runat="server" enctype="multipart/form-data" class="form1" autocomplete="off">
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <%--<img class="" src="Images/loader.gif" alt="loader" height="60" width="60">--%>
+            <img class="" src="Images/logo2.png" alt="LHO Logo" height="90" width="300">
+        </div>
+
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand bg-success navbar-light text-sm">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="color: #fff"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="Home.aspx" class="nav-link" style="color: #fff !important; font-size: 22px; margin-top: -8px">Local Housing Office</a>
+                    </li>
+
+
+                </ul>
+
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Notifications Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <asp:PlaceHolder ID="ph_notifications" runat="server"></asp:PlaceHolder>
+                    </li> 
+                    <%--<li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="far fa-bell" style="color: #fff"></i>
+                            <span class="badge badge-warning navbar-badge" style="color: #fff; padding: 2px; font-weight: bold">15</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-envelope mr-2"></i>4 new messages
+                       
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-2"></i>8 friend requests
+                       
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-2"></i>3 new reports
+                       
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>--%>
+
+                    <li class="nav-item dropdown pl-5 ml-2">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="far fa-user-circle" style="color: #fff; font-size:22px;"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-2">
+                            <a href="#" data-target="#modal_reset" data-toggle="modal" class="dropdown-item"><i class="nav-icon fa fa-key"></i>&nbsp;&nbsp;&nbsp;Reset Password</a>
+                            <a href="Login.aspx" class="dropdown-item"><i class="nav-icon fa fa-sign-out-alt"></i>&nbsp;&nbsp;&nbsp;Logout</a>
+                        </div>
+                    </li>
+
+
+                    <!-- FULL SCREEN
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt" style="color: #fff"></i>
+                        </a>
+                    </li>-->
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar elevation-1 sidebar-light-success ">
+
+                <!-- Brand Logo -->
+                <a href="Home.aspx" class="brand-link">
+                    <img src="Images/logo1.png" alt="LHO Logo" class="brand-image" style="opacity: 1">
+                    <span class="brand-text info" style="font-weight:500; font-size:small">Local Housing Office</span>
+                </a>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="Images/userPic.png" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block" id="lbl_userName" runat="server">-</a>
+                            <small id="lbl_userType" runat="server" style="display: block">-</small>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                            <asp:PlaceHolder ID="ph_menus" runat="server"></asp:PlaceHolder>
+
+                            <li class="nav-header" style="margin-top:-11px"><strong>Menu</strong></li>
+
+                            <li class="nav-item" id="li_settings" runat="server" visible="True">
+                                <a href="#" class="nav-link">
+                                    <i class="pl-1 pr-2 fas fa-users fa-lg" aria-hidden="true"></i>
+                                    <p>
+                                        Citizen
+                           
+                                        <i class="right fas fa-chevron-left fa-rotate-180"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Citizen.aspx" class="nav-link">
+                                            <i class="pl-4 pr-2 fas fa-minus fa-sm"></i>
+                                            <p>Profile</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="PurokSitio.aspx" class="nav-link">
+                                            <i class="pl-4 pr-2 fas fa-minus fa-sm"></i>
+                                            <p>Purok Sitio</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Barangay.aspx" class="nav-link d-none">
+                                            <i class="pl-4 pr-2 fas fa-minus fa-sm"></i>
+                                            <p>Barangay</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item" id="li1" runat="server" visible="True">
+                                <a href="#" class="nav-link">
+                                    <i class="pl-1 pr-2 fa fa-user-check fa-lg" aria-hidden="true"></i>
+                                    <p>
+                                        Verification
+                           
+                                    <i class="right fas fa-chevron-left fa-rotate-180"></i>
+                                    </p>
+                                </a>
+                                <!--APPLICANT-->
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Applicant.aspx" class="nav-link">
+                                            <i class="pl-4 pr-2 fas fa-minus fa-sm"></i>
+                                            <p>Applicant</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Forms.aspx" class="nav-link d-none">
+                                            <i class="pl-4 pr-2 fas fa-minus fa-sm"></i>
+                                            <p>Applicant</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--APPLICANT-->
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- /. Main Sidebar Container -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0" style="font-weight:bold; font-size: 30px" id="pageTitle">-</h1>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <%--<i class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">Dashboard v1</li>--%>
+                                </ol>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </section>
+            </div>
+
+            <!--FOOTER
+            <footer class="main-footer">
+                <div class="float-right d-none d-sm-block">
+                    <b>Version</b> 1
+                </div>
+                <strong>Copyright © 2023 CICTO BJJ.</strong>  All rights reserved.
+            </footer>-->
+        </div>
+
+        <div class="modal fade" id="modal_reset">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reset Password</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" runat="server" id="btn_xResetPassword">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row alert alert-warning alert-dismissible" id="div_defaultPasswordAlert" runat="server" visible="false">
+                            <h5><i class="icon fas fa-exclamation-triangle"></i>Alert!</h5>
+                            Default password detected, for security reason please change your password.
+                        </div>
+
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <div>
+                                <input id="txt_current" maxlength="45" name="txt_current" class="form-control passwordInput" type="password" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <div>
+                                <input id="txt_newPass" minlength="8" maxlength="45" class="form-control passwordInput" type="password" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Retype Password</label>
+                            <div>
+                                <input id="txt_reType" minlength="8" maxlength="45" class="form-control passwordInput" type="password" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal" runat="server" id="btn_closeResetPassword">Close</button>
+                        <button type="button" class="btn btn-outline-success" onclick="changePassword()">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="main-footer">
+            <strong>Copyright © 2023</strong>
+            All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+
+            </div>
+        </footer>
+
+
+
+        <script>
+            $('#txt_current').on('change', function () {
+                $.ajax({
+                    type: "POST",
+                    url: "Users.aspx/checkCurrentPassword",
+                    data: "{current: '" + this.value + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (r) {
+                        if (r.d == false) {
+                            $('#txt_current').val('').focus();
+                            systemMsg(0, 'Incorrect Password!');
+                        }
+                    }
+                });
+            })
+
+            $('#txt_newPass').on('change', function () {
+                $('#txt_reType').val('');
+                $('#txt_reType').rules("add", {
+                    equalTo: "#txt_newPass",
+                    messages: {
+                        equalTo: "Password not match!"
+                    }
+                });
+            });
+
+            function changePassword() {
+                jQuery.validator.addClassRules("passwordInput", {
+                    required: true
+                });
+
+                if ($('.passwordInput').valid()) {
+                    $.ajax({
+                        type: "POST",
+                        url: "Users.aspx/ResetPassword",
+                        data: "{newPassword: '" + $('#txt_reType').val() + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (r) {
+                            $('#modal_reset').modal('hide');
+                            systemMsg(1, 'You have successfully updated your password.');
+                        }
+                    });
+                }
+            }
+        </script>
+    </form>
+
+</body>
+</html>

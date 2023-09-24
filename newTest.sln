@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "newTest", "D:\CODING FILES\TRAINING CITYHALL\new_Test\newTest\", "{E5F5CE20-53CA-42DE-96A9-9D45DDB21045}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51072"
+		Debug.AspNetCompiler.PhysicalPath = "D:\CODING FILES\TRAINING CITYHALL\new_Test\newTest\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51072\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51072"
+		Release.AspNetCompiler.PhysicalPath = "D:\CODING FILES\TRAINING CITYHALL\new_Test\newTest\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51072\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51072"
+		SlnRelativePath = "D:\CODING FILES\TRAINING CITYHALL\new_Test\newTest\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5F5CE20-53CA-42DE-96A9-9D45DDB21045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F5CE20-53CA-42DE-96A9-9D45DDB21045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B152EB2-CE8D-4AD1-BCE6-80FB3735848A}
+	EndGlobalSection
+EndGlobal

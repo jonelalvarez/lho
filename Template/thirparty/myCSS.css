@@ -1,0 +1,240 @@
+﻿.select2-container .select2-selection--single, .select2-selection--multiple {
+    min-height: 38px !important;
+}
+
+@media all {
+    .page-break {
+        display: none;
+        clear: both;
+        display: block;
+        page-break-before: always !important;
+    }
+
+    .page {
+        page-break-after: always;
+        width: 1015px !important
+    }
+
+    .cls_print img {
+        margin: 10px !important;
+    }
+}
+
+@media print {
+    @page {
+        size: auto; /* auto is the initial value */
+        margin: 0.26in 0.63in 0.20in 0.63in;
+    }
+
+    .page-break {
+        clear: both;    
+        display: block;
+        page-break-before: always !important;
+    }
+
+    .page {
+        page-break-after: always;
+        width: 1015px !important
+        /*margin: 0.26in 0.63in 0.26in 0.63in;*/
+    }
+
+    .cls_print img {
+        margin: 10px !important;
+    }
+
+    .printPreview {
+        width: 100%;
+        height: 100%;
+        /*position: absolute;*/
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        margin-top: 0px !important;
+    }
+}
+
+.modal {
+    overflow-y: initial !important;
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.usetwentyfour {
+    z-index: 999999 !important;
+}
+
+.select2-container {
+    width: 100% !important
+}
+
+.tableInfo th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.input-group > .select2-container {
+    /*width: 90% !important;*/
+    flex: 1 1 auto;
+}
+
+.input-group > .select2-container .select2-selection--single {
+        height: 100%;
+        line-height: inherit;
+        padding: 0.5rem 1rem;
+}
+
+label.error {
+    color: #dc3545 !important;
+    font-size: smaller !important;
+    font-weight: 500 !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.select2-selection--single.is-invalid, .select2-selection--multiple.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+
+/*uploads*/
+.ace-thumbnails {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ace-thumbnails > li {
+        float: left;
+        overflow: hidden;
+        margin: 2px;
+        border: 2px solid #333;
+    }
+
+.ace-thumbnails > li, .ace-thumbnails > li > :first-child {
+            display: block;
+            position: relative;
+        }
+
+.ace-thumbnails > li, .ace-thumbnails > li > :first-child {
+                display: block;
+                position: relative;
+            }
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.ace-thumbnails > li > .in.tools.tools-top {
+    bottom: auto;
+    top: 0;
+}
+
+.ace-thumbnails > li > .in.tools {
+    left: 0;
+    right: 0;
+}
+
+.ace-thumbnails > li > .tools.tools-top {
+    width: auto;
+    height: 28px;
+    left: 0;
+    right: 0;
+    top: -30px;
+    bottom: auto;
+}
+
+.ace-thumbnails > li > .tools {
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    width: 24px;
+    vertical-align: middle;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.ace-thumbnails > li > .tools, .ace-thumbnails > li > :first-child > .text {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,.55);
+}
+
+.ace-thumbnails > li .tools.tools-bottom > a, .ace-thumbnails > li .tools.tools-top > a {
+    display: inline-block;
+}
+
+.ace-thumbnails > li > .tools > a, .ace-thumbnails > li > :first-child .inner a {
+    display: inline-block;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+
+.ace-file-multiple .ace-file-container.selected .ace-file-name .ace-icon {
+    font-family: 'Font Awesome 5 Free' !important;
+}
+
+.chatHead {
+    position: fixed;
+    right: 22px;
+    bottom: 122px;
+}
+
+.chatBox {
+    position: fixed !important;
+    right: 22px;
+    bottom: 122px;
+    display: none;
+    opacity: 0.8;
+}
+
+.chapterItems:hover {
+    color: green;
+    font-weight: 900;
+}
+
+.pageItems:hover {
+    background-color:#f7dede ;
+    font-weight: 600;
+}
+
+.tools>i:hover {
+    font-size: large;
+}
+
+.handHover {
+    cursor: pointer !important;
+}
+
+.handle {
+    cursor: move !important;
+}
+
+.note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+    max-width: 1056px !important;
+}
+
+.table-condensed td, .table-condensed th {
+    padding: .35rem !important;
+}
+
+blockquote {
+    border-left: .5rem solid #000 !important;
+}
+
